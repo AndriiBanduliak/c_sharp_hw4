@@ -1,0 +1,24 @@
+﻿//Task 1
+
+using static System.Console;
+Clear(); 
+
+WriteLine("Enter the number A and the number B");
+int a=getIngeger(); 
+int b=getIngeger();
+WriteLine($"The number A: {a} to the power of B: {b} is: {pow(a,b)}");
+
+int getIngeger()
+{
+    ///Write("Enter the number: ");
+    return int.Parse(ReadLine());
+}
+int pow(int a, int b)
+{
+    int result = 1;
+    for (int i = 0; i < b; i++)
+    {
+        result *= a;
+    }
+    return result;
+}
